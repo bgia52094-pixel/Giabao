@@ -315,8 +315,9 @@ end
 
 task.spawn(function()
 while task.wait(0.5) do
-for _,v in pairs(ESPFolder:GetChildren()) do v:
-Destroy() end
+for _,v in pairs(ESPFolder:GetChildren())
+Destroy()
+end
 if C.ESP or C.PlayerESP then
 for _,p in pairs(Players:GetPlayers()) do
 if p~=LP and p.Character then ApplyESP(p.Character,Color3.fromRGB(255,0,0)) end
